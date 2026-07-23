@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
-const THEME_KEY = "hiring-assessment-theme";
+const THEME_KEY = "workplace-practice-theme";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<Theme>("light");

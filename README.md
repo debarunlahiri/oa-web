@@ -1,10 +1,10 @@
-# Hiring Judgement Practice
+# Workplace Judgement Practice
 
 An original Google-inspired workplace judgement and work-style practice
 application built with Next.js, TypeScript, React, and Tailwind CSS.
 
 This project is independent and is not affiliated with or endorsed by Google.
-It does not contain official or confidential Google hiring material.
+It does not contain official or confidential Google recruitment material.
 
 ## Development
 

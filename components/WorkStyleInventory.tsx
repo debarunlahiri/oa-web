@@ -17,7 +17,7 @@ type SavedState = {
   current: number;
 };
 
-const STORE = "hiring-work-style-inventory-google-inspired-v3";
+const STORE = "workplace-style-inventory-google-inspired-v3";
 const TOTAL = workStyleStatements.length;
 const labels: Array<{ value: Rating; label: string }> = [
   { value: 1, label: "Strongly Disagree" },
@@ -426,7 +426,7 @@ export default function WorkStyleInventory({ onBack }: { onBack: () => void }) {
             </div>
             <p>
               This indicator compares responses to differently worded statements
-              covering related themes. It is not a truthfulness score or hiring
+              covering related themes. It is not a truthfulness score or selection
               prediction.
             </p>
           </div>
@@ -451,7 +451,7 @@ export default function WorkStyleInventory({ onBack }: { onBack: () => void }) {
           <p className="disclaimer">
             ⓘ Google-inspired independent practice inventory. Not affiliated
             with or endorsed by Google. It contains no official or confidential
-            Google hiring material and does not predict a Google hiring
+            Google recruitment material and does not predict a Google recruitment
             decision.
           </p>
         </footer>

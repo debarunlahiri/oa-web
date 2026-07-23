@@ -11,7 +11,7 @@ import {
 } from "../lib/assessmentEngine";
 import { Attempt, Category, Difficulty, OptionId } from "../lib/types";
 
-const STORAGE = "hiring-judgement-attempt-v1";
+const STORAGE = "workplace-judgement-attempt-v1";
 type View = "home" | "instructions" | "assessment" | "results" | "workstyle";
 type ReviewStatus = "All" | "Correct" | "Incorrect" | "Unanswered" | "Marked";
 
@@ -34,7 +34,7 @@ function Brand({ onHome }: { onHome: () => void }) {
     >
       <span className="brandMark">HJ</span>
       <span>
-        Hiring Judgement
+        Workplace Judgement
         <br />
         <b>Practice</b>
       </span>
@@ -715,7 +715,7 @@ export default function App() {
           <h1>{result.band}</h1>
           <p>
             Your results reflect this independent practice attempt, not any
-            company&apos;s hiring criteria.
+            company&apos;s selection criteria.
           </p>
           <div className="resultMetrics">
             <div>
