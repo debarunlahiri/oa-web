@@ -1,0 +1,74 @@
+# Dependencies
+/node_modules/
+/.pnp/
+.pnp.*
+/.yarn/*
+!/.yarn/patches/
+!/.yarn/plugins/
+!/.yarn/releases/
+!/.yarn/versions/
+
+# Next.js and Vinext build output
+/.next/
+/.vinext/
+/dist/
+/out/
+/outputs/
+/work/
+
+# Cloudflare local state
+/.wrangler/
+/.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# Test and tool output
+/coverage/
+/.nyc_output/
+/.turbo/
+/.cache/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Deployment provider state
+/.vercel/
+
+# Editor and IDE files
+/.idea/
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/settings.example.json
+*.swp
+*.swo
+*~
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local certificates and keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+tmp/
