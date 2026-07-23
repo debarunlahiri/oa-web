@@ -1,7 +1,14 @@
 export type Category =
-  | "Integrity" | "Accountability" | "Collaboration" | "Communication"
-  | "Problem Solving" | "Prioritization" | "Adaptability" | "User Focus"
-  | "Security" | "Leadership";
+  | "Integrity"
+  | "Accountability"
+  | "Collaboration"
+  | "Communication"
+  | "Problem Solving"
+  | "Prioritization"
+  | "Adaptability"
+  | "User Focus"
+  | "Security"
+  | "Leadership";
 
 export type Difficulty = "Medium" | "Difficult" | "Very Difficult";
 export type OptionId = "A" | "B" | "C" | "D";

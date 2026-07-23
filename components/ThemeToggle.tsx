@@ -10,7 +10,11 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     const saved = localStorage.getItem(THEME_KEY) as Theme | null;
-    const initial = saved ?? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const initial =
+      saved ??
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
     setTheme(initial);
     document.documentElement.dataset.theme = initial;
   }, []);
@@ -22,5 +26,16 @@ export default function ThemeToggle() {
     localStorage.setItem(THEME_KEY, next);
   };
 
-  return <button className="themeToggle" type="button" onClick={toggle} aria-label={`Switch to ${theme === "dark" ? "light" : "black"} mode`} title={`Switch to ${theme === "dark" ? "light" : "black"} mode`}><span aria-hidden="true">{theme === "dark" ? "☀" : "◐"}</span><b>{theme === "dark" ? "Light" : "Black"}</b></button>;
+  return (
+    <button
+      className="themeToggle"
+      type="button"
+      onClick={toggle}
+      aria-label={`Switch to ${theme === "dark" ? "light" : "black"} mode`}
+      title={`Switch to ${theme === "dark" ? "light" : "black"} mode`}
+    >
+      <span aria-hidden="true">{theme === "dark" ? "☀" : "◐"}</span>
+      <b>{theme === "dark" ? "Light" : "Black"}</b>
+    </button>
+  );
 }
